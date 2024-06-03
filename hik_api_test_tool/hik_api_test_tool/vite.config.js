@@ -16,13 +16,13 @@ export default defineConfig({
     https:true,
     proxy: {
       '/dev-api': {
-        target: 'https://15.0.160.61:1443',
+        target: 'https://*.*.*.*:1443',
         changeOrigin: true,
         secure:false,
         rewrite: (p) => p.replace(/^\/dev-api/, '')
       },
       '/sign-api': {
-        target: 'http://172.20.0.215:3000',
+        target: 'http://*.*.*.*:3000',
         changeOrigin: true,
         rewrite: (p) => p.replace(/^\/sign-api/, '')
       }
