@@ -1,0 +1,2 @@
+# HikOpenAPITools
+海康威视综合安防管理平台API测试工具与签名认证工具
